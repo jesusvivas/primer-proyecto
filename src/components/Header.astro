@@ -4,12 +4,14 @@ import { Icon } from 'astro-icon/components'
 
 
 <header>
-  <nav>
-    <div>
-      <Icon name={"icono-gym"} width={40} height={40} />
+  <nav class="menu">
+
+    <div class="logo">
+      <Icon name={"icono-gym"} width={25} height={25} />
       <a href="/"><p>FitLife Gym</p></a>
     </div>
-    <div>
+
+    <div class="enlaces">
       <a href="#">Clases</a>
       <a href="#">Horario</a>
       <a href="/gallery">Galeria</a>
@@ -19,3 +21,23 @@ import { Icon } from 'astro-icon/components'
     </div>
   </nav>
 </header>
+
+<style>
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+
+    .logo {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }  
+
+    .enlaces {
+      display: flex;
+      gap: 32px;
+    }
+</style>
