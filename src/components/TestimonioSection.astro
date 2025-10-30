@@ -1,0 +1,23 @@
+---
+interface Props{
+    name: string
+    time: string
+    review: string
+}
+
+const {name,time,review} = Astro.props
+
+---
+
+
+<div>
+    <img src="#" alt="imagen de usuario">
+    <div>
+        <h3>{name}</h3>
+        <p>{time}</p>
+    </div>
+    <div>
+        <span>estrellas</span>
+    </div>
+    <p>{review}</p>
+</div>
