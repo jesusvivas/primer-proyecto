@@ -7,18 +7,52 @@ interface Props {
 const {title,price} = Astro.props
 ---
 
-<div>
-    <div>
+<div class="container">
+    <div class="titulo">
         <h3>{title}</h3>
-        <p>${price}/mes</p>
+        <p><span>${price}</span>/mes</p>
     </div>
     <div>
-        <button>Selecionar Plan Básico</button>
+        <a href=""><button>Selecionar Plan Básico</button></a>
     </div>
-    <div>
+    <div class="list">
         <ul>
             <li>Acceso a todas las áreas del gimnasio</li>
             <li>Clases grupales incluidas</li>
         </ul>
     </div>
 </div>
+
+<style>
+    .container {
+        color: #ffff;
+        text-align: center;
+        padding: 12px;
+        width: 100%;
+        max-width: none;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 2px;
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+    span {
+        font-size: 19px;
+    }
+
+    button {
+        background-color: #482323;
+        padding: 12px 36px;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+
+
+
+</style>
