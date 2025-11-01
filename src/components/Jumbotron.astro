@@ -1,6 +1,8 @@
 <section>
   <div class="container">
 
+    <img src="/fondo.jpg" alt="" class="fondo">
+
     <h1>Trasforma tu cuerpo, transforma tu vida</h1>
     <p>
       En FitLife Gym, te ayudamos a acalzar tus metas de fitness con entrenamientos
@@ -13,7 +15,7 @@
 
 <style>
   section {
-    padding: 0 120px;
+    padding: 40px 120px;
   }
 
   .container {
@@ -22,15 +24,25 @@
       display: flex;
       gap: 16px;
       align-items: center;
-      padding: 60px;
-      background-color: #2e2e2e;
+      padding: 70px;
       color: #ffff;
       border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+  }
+
+  .fondo {
+    position: absolute;
+    z-index: -100;
+    top: -50%;
+    left: 0;
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 50px;
+    line-height: 50px;
     font-weight: 600;
+    padding: 50px 0px 10px 0;
   }
 
   button {
@@ -38,5 +50,6 @@
     padding: 12px 36px;
     border-radius: 10px;
     font-weight: 700;
+    margin-bottom: 30px;
   }
 </style>
