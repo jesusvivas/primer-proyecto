@@ -26,33 +26,51 @@ const {title,price} = Astro.props
 <style>
     .container {
         color: #ffff;
+        background-color: #331919;
         text-align: center;
         padding: 12px;
         width: 100%;
         max-width: none;
+        border: 2px solid #402020;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     h3 {
         font-size: 16px;
         font-weight: 600;
         padding: 2px;
+        text-align: start;
     }
 
     p {
         font-weight: bold;
+        text-align: start;
+        padding: 0 0 0 15px;
     }
 
     span {
-        font-size: 19px;
+        font-size: 30px;
     }
 
     button {
         background-color: #482323;
-        padding: 12px 36px;
+        padding: 12px 48px;
         border-radius: 10px;
         font-weight: 700;
     }
 
+    ul {
+        text-align: start;
+        padding: 0 20px 100px 40px;
+    }
+
+    li {
+        padding: 5px 0;
+        font-size: 14px;
+    }
 
 
 </style>

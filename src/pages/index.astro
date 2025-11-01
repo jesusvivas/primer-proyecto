@@ -12,7 +12,7 @@ import TestimonioSection from "../components/TestimonioSection.astro";
 
 <Layout>
   <Jumbotron />
-  <section>
+  <section class="plansection">
     <h2>Nuetros Planes</h2>
     <div class="cardPlanes">
       <CardPlanes title="Plan Básico" price={29} />
@@ -62,10 +62,30 @@ import TestimonioSection from "../components/TestimonioSection.astro";
     </div>
   </section>
 
+  <section>
+    <h2>Contacto</h2>
   <ContactSection />
-  
+  </section>
 </Layout>
 
+
+
 <style>
-  .cardplanes
+
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+    padding: 0 0 20px 0;
+  }
+
+
+  .plansection {
+    padding: 20px 120px;
+  }
+
+  .cardPlanes {
+    display: flex;
+    gap: 10px;
+  }
 </style>
