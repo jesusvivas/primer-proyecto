@@ -2,9 +2,12 @@
 interface Props {
     title: string
     price: number
+    button: string
+    list: string
+    listes: string
 }
 
-const {title,price} = Astro.props
+const {title,price,button,list,listes} = Astro.props
 ---
 
 <div class="container">
@@ -13,12 +16,14 @@ const {title,price} = Astro.props
         <p><span>${price}</span>/mes</p>
     </div>
     <div>
-        <a href=""><button>Selecionar Plan Básico</button></a>
+        <a href=""><button>Selecionar Plan {button}</button></a>
     </div>
     <div class="list">
         <ul>
             <li>Acceso a todas las áreas del gimnasio</li>
             <li>Clases grupales incluidas</li>
+            <li>{list}</li>
+            <li>{listes}</li>
         </ul>
     </div>
 </div>
@@ -64,7 +69,7 @@ const {title,price} = Astro.props
 
     ul {
         text-align: start;
-        padding: 0 20px 100px 40px;
+        padding: 0 30px 100px 40px;
     }
 
     li {

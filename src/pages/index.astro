@@ -15,9 +15,27 @@ import TestimonioSection from "../components/TestimonioSection.astro";
   <section class="plansection">
     <h2>Nuetros Planes</h2>
     <div class="cardPlanes">
-      <CardPlanes title="Plan Básico" price={29} />
-      <CardPlanes title="Plan Premium" price={49} />
-      <CardPlanes title="Plan Elite" price={79} />
+      <CardPlanes
+        title="Plan Básico"
+        price={29}
+        button="Básico"
+        list=""
+        listes=""
+      />
+      <CardPlanes
+        title="Plan Premium"
+        price={49}
+        button="Premium"
+        list="Entrenamiento personalizado (1 sesión/mes)"
+        listes=""
+      />
+      <CardPlanes
+        title="Plan Elite"
+        price={79}
+        button="Elite"
+        list="Entrenamiento personalizado (2 sesiones/mes)"
+        listes="Acceso a áreas VIP"
+      />
     </div>
   </section>
   <section>
@@ -40,50 +58,46 @@ import TestimonioSection from "../components/TestimonioSection.astro";
   <section>
     <h2>Horarios</h2>
     <div>
-      <TestimonioSection 
-      name="María Garcia"
-      time="Hace 2 meses"
-      review="FitLife Gym ha cambiado mi vida.He perdido peso y me siento más fuerte que nunca."
+      <TestimonioSection
+        name="María Garcia"
+        time="Hace 2 meses"
+        review="FitLife Gym ha cambiado mi vida.He perdido peso y me siento más fuerte que nunca."
       />
     </div>
     <div>
-      <TestimonioSection 
-      name="Juan Pérez"
-      time="Hace 3 meses"
-      review="Los entrenadores son excelentes y siempre están dispuestos a ayudar.Las instalaciones son de primera."
+      <TestimonioSection
+        name="Juan Pérez"
+        time="Hace 3 meses"
+        review="Los entrenadores son excelentes y siempre están dispuestos a ayudar.Las instalaciones son de primera."
       />
     </div>
     <div>
-      <TestimonioSection 
-      name="Lucía Martínez"
-      time="Hace 1 mes"
-      review="El ambiente es muy motivador y las clases son desafiantes.Recomiendo FitLife Gym a todos."
+      <TestimonioSection
+        name="Lucía Martínez"
+        time="Hace 1 mes"
+        review="El ambiente es muy motivador y las clases son desafiantes.Recomiendo FitLife Gym a todos."
       />
     </div>
   </section>
 
   <section>
     <h2>Contacto</h2>
-  <ContactSection />
+    <ContactSection />
   </section>
 </Layout>
 
 
 
 <style>
-
   h2 {
     font-size: 20px;
     font-weight: bold;
     text-align: start;
     padding: 0 0 20px 0;
   }
-
-
   .plansection {
     padding: 20px 120px;
   }
-
   .cardPlanes {
     display: flex;
     gap: 10px;
