@@ -7,10 +7,37 @@ interface Props{
 const {title,text} = Astro.props
 ---
 
-<div>
-    <img src="#" alt="imagen de la clase">
-    <div>
+<div class="container">
+    <img src="/cardfuerza.jpg" alt="imagen de la clase">
+    <div class="text">
         <h3>{title}</h3>
         <p>{text}</p>
     </div>
 </div>
+
+
+
+<style>
+    img {
+        border-radius: 5px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .text {
+        padding: 20px 0;
+    }
+
+    h3 {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 0 20px 0 0;
+        color: #AC7B7B;
+    }
+
+</style>

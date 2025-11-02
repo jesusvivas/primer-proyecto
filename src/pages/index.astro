@@ -38,9 +38,9 @@ import TestimonioSection from "../components/TestimonioSection.astro";
       />
     </div>
   </section>
-  <section>
+  <section class="clasesection">
     <h2>Nuestras Clases</h2>
-    <div>
+    <div class="cardclase">
       <TarjetasClases
         title="Entrenamiento de Fuerza"
         text="Desarolla músculo y aumenta tu fuerza con nuestros entrenamientos intensivos."
@@ -56,7 +56,7 @@ import TestimonioSection from "../components/TestimonioSection.astro";
     </div>
   </section>
   <section>
-    <h2>Horarios</h2>
+    <h2>Testimonios</h2>
     <div>
       <TestimonioSection
         name="María Garcia"
@@ -102,4 +102,14 @@ import TestimonioSection from "../components/TestimonioSection.astro";
     display: flex;
     gap: 10px;
   }
+
+  .cardclase {
+    display: flex;
+    gap: 20px;
+  }
+
+  .clasesection{
+    padding: 20px 120px;
+  }
+
 </style>
