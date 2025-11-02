@@ -10,14 +10,32 @@ const {name,time,review} = Astro.props
 ---
 
 
-<div>
+<div class="container">
     <img src="#" alt="imagen de usuario">
-    <div>
+    <div class="name">
         <h3>{name}</h3>
         <p>{time}</p>
     </div>
-    <div>
+    <div class="review">
         <span>estrellas</span>
+        <p>{review}</p>
     </div>
-    <p>{review}</p>
 </div>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .name {
+        display: flex;
+
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+    }
+</style>

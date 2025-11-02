@@ -55,7 +55,11 @@ import TestimonioSection from "../components/TestimonioSection.astro";
       />
     </div>
   </section>
-  <section>
+  <section class="horariosection">
+    <h2>Horarios</h2>
+    <div>Aqui va los horarios</div>
+  </section>
+  <section class="reviewsection">
     <h2>Testimonios</h2>
     <div>
       <TestimonioSection
@@ -79,8 +83,7 @@ import TestimonioSection from "../components/TestimonioSection.astro";
       />
     </div>
   </section>
-
-  <section>
+  <section class="contactSection">
     <h2>Contacto</h2>
     <ContactSection />
   </section>
@@ -95,7 +98,7 @@ import TestimonioSection from "../components/TestimonioSection.astro";
     text-align: start;
     padding: 0 0 20px 0;
   }
-  .plansection {
+  section {
     padding: 20px 120px;
   }
   .cardPlanes {
@@ -106,10 +109,6 @@ import TestimonioSection from "../components/TestimonioSection.astro";
   .cardclase {
     display: flex;
     gap: 20px;
-  }
-
-  .clasesection{
-    padding: 20px 120px;
   }
 
 </style>
