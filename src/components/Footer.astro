@@ -4,6 +4,7 @@ import { Icon } from 'astro-icon/components'
 
 
 <footer>
+    <div class="text">
         <div>
             <p>Política de Privacidad</p>
         </div>
@@ -13,10 +14,48 @@ import { Icon } from 'astro-icon/components'
         <div>
             <p>Contacto</p>
         </div>
-        <div>
+    </div>    
+        <div class="icon">
             <Icon name={"mdi--instagram"}/>
             <Icon name={"mdi--facebook"}/>
             <Icon name={"mdi--whatsapp"}/>
         </div>
-        <p>2024 FitLife Gym, Todos los derechos reservados.</p>
+        <p class="derecho">2024 FitLife Gym, Todos los derechos reservados.</p>
 </footer>
+
+
+<style>
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        padding: 40px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        padding: 5px 50px;
+    }
+
+    .icon {
+        padding: 5px 0 20px 80px;
+    }
+
+    .derecho {
+        padding: 0 0 0 80px;
+    }
+
+
+
+</style>
