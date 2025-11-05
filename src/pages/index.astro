@@ -6,6 +6,39 @@ import TarjetasClases from "../components/TarjetasClases.astro";
 import ContactSection from "../components/ContactSection.astro";
 import TestimonioSection from "../components/TestimonioSection.astro";
 
+const cardPlanesList = [
+  {
+    title: "Plan Básico",
+    price: 29,
+    button:"Básico",
+    list: [
+      "Acceso a todas las áreas del gimnasio",
+      "Clases grupales incluidas",
+    ]
+  },
+  {
+    title: "Plan Premium",
+    price: 49,
+    button:"Premium",
+    list: [
+      "Acceso a todas las áreas del gimnasio",
+      "Clases grupales incluidas",
+      "Entrenamiento personalizado (1 sesión/mes)"
+    ]
+  },
+  {
+    title: "Plan Elite",
+    price: 79,
+    button:"Elite",
+    list: [
+      "Acceso a todas las áreas del gimnasio",
+      "Clases grupales incluidas",
+      "Entrenamiento personalizado (1 sesión/mes)",
+      "Acceso a áreas VIP"
+    ]
+  },
+]
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -15,27 +48,11 @@ import TestimonioSection from "../components/TestimonioSection.astro";
   <section class="plansection">
     <h2>Nuetros Planes</h2>
     <div class="cardPlanes">
-      <CardPlanes
-        title="Plan Básico"
-        price={29}
-        button="Básico"
-        list=""
-        listes=""
-      />
-      <CardPlanes
-        title="Plan Premium"
-        price={49}
-        button="Premium"
-        list="Entrenamiento personalizado (1 sesión/mes)"
-        listes=""
-      />
-      <CardPlanes
-        title="Plan Elite"
-        price={79}
-        button="Elite"
-        list="Entrenamiento personalizado (2 sesiones/mes)"
-        listes="Acceso a áreas VIP"
-      />
+      {
+        cardPlanesList.map(function (props) {
+          return <CardPlanes title={props.title} price={props.price} button={props.button} list={props.list} />
+        })
+      }
     </div>
   </section>
   <section class="clasesection">

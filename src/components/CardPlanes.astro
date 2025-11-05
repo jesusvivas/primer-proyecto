@@ -3,11 +3,11 @@ interface Props {
     title: string
     price: number
     button: string
-    list: string
-    listes: string
+    list: string[]
+
 }
 
-const {title,price,button,list,listes} = Astro.props
+const {title,price,button,list,} = Astro.props
 ---
 
 <div class="container">
@@ -20,10 +20,11 @@ const {title,price,button,list,listes} = Astro.props
     </div>
     <div class="list">
         <ul>
-            <li>Acceso a todas las áreas del gimnasio</li>
-            <li>Clases grupales incluidas</li>
-            <li>{list}</li>
-            <li>{listes}</li>
+            {
+                list.map(function (item) {
+                    return <li>{item}</li>
+                })
+            }
         </ul>
     </div>
 </div>
