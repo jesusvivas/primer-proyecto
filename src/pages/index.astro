@@ -77,7 +77,29 @@ const cardPlanesList = [
   </section>
   <section class="horariosection">
     <h2>Horarios</h2>
-    <div>Aqui va los horarios</div>
+    <div class="titulos">
+      <p>Clase</p>
+      <p>Instructor</p>
+      <p>Horario</p>
+      <p>Duración</p>
+    </div>
+    <div class="table-content">
+      <div class="clase">
+        <p>Entrenamiento de Pesas</p>
+        <p>Yoga</p>
+        <p>Levantamiento de Pesas</p>
+        <p>Cardio Intensivo</p>
+        <p>Pilates</p>
+      </div>
+      <div class="instructor">
+        <p>Carlos</p>
+        <p>Sofía</p>
+        <p>Ricardo</p>
+        <p>Ana</p>
+        <p>Laura</p>
+      </div>
+
+    </div>
   </section>
   <section class="reviewsection">
     <h2>Testimonios</h2>
@@ -134,5 +156,20 @@ const cardPlanesList = [
   .contacto {
   text-align: center;
   }
+
+  .titulos {
+    display: flex;
+    gap: 200px;
+    padding:20px 80px;
+    text-align: end;
+  }
+
+  .clase {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 0 80px;
+  }
+
 
 </style>
