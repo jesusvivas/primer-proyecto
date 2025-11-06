@@ -2,13 +2,14 @@
 interface Props{
     title: string
     text: string
+    image: string
 }
 
-const {title,text} = Astro.props
+const {title,text,image} = Astro.props
 ---
 
 <div class="container">
-    <img src="/cardfuerza.jpg" alt="imagen de la clase">
+    <img src={image} alt="imagen de la clase">
     <div class="text">
         <h3>{title}</h3>
         <p>{text}</p>
