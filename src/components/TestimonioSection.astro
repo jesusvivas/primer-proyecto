@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon/components'
+
 interface Props{
     name: string
     time: string
@@ -7,35 +9,57 @@ interface Props{
 
 const {name,time,review} = Astro.props
 
+
 ---
 
 
 <div class="container">
-    <img src="#" alt="imagen de usuario">
-    <div class="name">
-        <h3>{name}</h3>
-        <p>{time}</p>
+    <div class="title">
+        <div class="img">
+        <img src="#" alt="icono">
+        </div>
+        <div class="name">
+            <h3>{name}</h3>
+            <p>{time}</p>
+        </div>
     </div>
     <div class="review">
-        <span>estrellas</span>
-        <p>{review}</p>
+        <Icon name={"star-review"} width={30} height={30}/>
+        <Icon name={"star-review"} width={30} height={30}/>
+        <Icon name={"star-review"} width={30} height={30}/>
+        <Icon name={"star-review"} width={30} height={30}/>
+        <Icon name={"star-review"} width={30} height={30}/>
     </div>
+    <p>{review}</p>
 </div>
 
 <style>
     .container {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+    }
+
+    .img {
+        display: flex;
+    }
+
+    .title {
+        display: flex;
+        
     }
 
     .name {
         display: flex;
-
+        flex-direction: column;
     }
 
     .review {
         display: flex;
-        flex-direction: column;
+        color: red;
     }
+
+    p{
+        padding: 0 0 30px 0;
+    }
+
 </style>
