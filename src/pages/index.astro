@@ -144,8 +144,16 @@ const cardPlanesList = [
   section {
     padding: 20px 120px;
   }
+  @media (max-width:768px) {
+    section {
+      padding: 20px 60px;
+    }
+    
+  }
+
   .cardPlanes {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
   }
 
