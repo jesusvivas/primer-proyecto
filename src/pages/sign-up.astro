@@ -7,11 +7,11 @@ import Layout from "../layouts/Layout.astro";
     <!-- formulario para el registro -->
     <form action="">
         <div class="name">
-            <div>
+            <div class="Nombre">
                 <h3>Nombre</h3>
                 <input type="text">
             </div>
-            <div>
+            <div class="Apellido">
                 <h3>Apellido</h3>
                 <input type="text">
             </div>
@@ -32,13 +32,15 @@ import Layout from "../layouts/Layout.astro";
             <h3>Tipo de Plan</h3>
             <input type="text">
         </div>
-        <div>
-            <button type="submit">Enviar</button>
-        </div>
-        <div>
-            <button>Cancelar</button>
-        </div>
-    </form>
+        <div class="button">
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+            <div>
+                <button class="button-cancel">Cancelar</button>
+            </div>
+        </div>    
+        </form>
 </Layout>
 
 
@@ -49,6 +51,15 @@ import Layout from "../layouts/Layout.astro";
         flex-direction: row;
         gap: 15px;
     }
+
+    .Nombre {
+        width: 50%;
+    }
+
+    .Apellido {
+        width: 50%;
+    }
+
 
     h2{
     text-align : center;
@@ -72,5 +83,24 @@ import Layout from "../layouts/Layout.astro";
         border-radius: 5px;
         width: 100%;
     }
+
+    button {
+        background-color:#F21616;
+        padding: 8px 24px;
+        color: #ffff;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .button-cancel {
+        background-color: #482323;
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 150px;
+    }
+
 
 </style>
