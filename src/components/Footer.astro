@@ -40,6 +40,12 @@ import { Icon } from 'astro-icon/components'
         gap: 20px;
         padding: 10px;
     }
+    @media (max-width:768px) {
+        div { 
+            padding: 0 0 0;
+        }
+        
+    }
 
     .text {
         display: flex;
@@ -47,6 +53,14 @@ import { Icon } from 'astro-icon/components'
         gap: 200px;
         padding: 5px 50px;
     }
+    @media (max-width: 768px) {
+        .text{
+            gap: 100px;
+            padding: 5px;
+            font-size: 14px;
+        }
+    }
+
 
     .icon {
         padding: 5px 0 20px 80px;
