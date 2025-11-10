@@ -63,6 +63,25 @@
     .horarios-encabezados{
         background-color: #331919;
     }
+    @media (max-width: 768px) {
+        .horarios-encabezados{
+            display: none;
+        }
+        .clase-item {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            padding: 15px;
+        }
+        .clase-item span {
+            width: 100%;
+            padding: 4px 0;
+        }
+        .clase-item .clase {
+            font-weight: bold;
+        }
+
+    }
 
     .clase, .instructor, .horario, .duracion {
         flex: 1;
