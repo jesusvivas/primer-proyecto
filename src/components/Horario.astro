@@ -1,0 +1,92 @@
+<div class="seccion-horarios">
+    <div class="horarios-encabezados">
+        <span class="clase">Clase</span>
+        <span class="instructor">Instructor</span>
+        <span class="horario">Horario</span>    
+        <span class="duración">Duración</span>    
+    </div>
+
+    <ul class="lista-clases">
+        <li class="clase-item">
+            <span class="clase">Entrenamiento de Fuerza</span>
+            <span class="instructor">Carlos</span>
+            <span class="horario">Lunes y Miércoles 6:00 PM</span>
+            <span class="Duracion">1 Hora</span>
+        </li>
+
+        <li class="clase-item">
+            <span class="clase">Yoga</span>
+            <span class="instructor">Sofía</span>
+            <span class="horario">Martes y Jueves 7:00 AM</span>
+            <span class="Duracion">1 Hora</span>
+        </li>
+
+        <li class="clase-item">
+            <span class="clase">Levantamiento de Pesas</span>
+            <span class="instructor">Ricardo</span>
+            <span class="horario">Martes y Jueves 6:00 PM</span>
+            <span class="Duracion">1 Hora</span>
+        </li>
+
+        <li class="clase-item">
+            <span class="clase">Cardio Intensivo</span>
+            <span class="instructor">Ana</span>
+            <span class="horario">Lunes y Miércoles 7:00 AM</span>
+            <span class="Duracion">1 Hora</span>
+        </li>
+
+        <li class="clase-item">
+            <span class="clase">Pilates</span>
+            <span class="instructor">Laura</span>
+            <span class="horario">Viernes 9:00 AM</span>
+            <span class="Duracion">1 Hora</span>
+        </li>
+    </ul>
+</div>
+
+
+
+<style>
+    .seccion-horarios {
+        max-width: 900px;
+        margin: 0 auto 40px;
+        border: 2px solid #592D2D;
+        border-radius: 6px;
+    }
+
+    .horarios-encabezados, .clase-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 15px;
+    }
+
+    .horarios-encabezados{
+        background-color: #331919;
+    }
+
+    .clase, .instructor, .horario, .duracion {
+        flex: 1;
+        min-width: 100px;
+    }
+
+    .horario {
+        flex: 2;
+    }
+
+    .horarios-encabezados {
+        border-bottom: 2px solid #592D2D;
+        font-weight: bold;
+    }
+
+    .listas-clases {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .clase-item {
+        margin-top: 2px;
+        border-bottom: 1px solid #592D2D;
+    }
+
+</style>

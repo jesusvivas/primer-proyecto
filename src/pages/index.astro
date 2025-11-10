@@ -5,6 +5,7 @@ import CardPlanes from "../components/CardPlanes.astro";
 import TarjetasClases from "../components/TarjetasClases.astro";
 import ContactSection from "../components/ContactSection.astro";
 import TestimonioSection from "../components/TestimonioSection.astro";
+import Horario from "../components/Horario.astro";
 
 const cardPlanesList = [
   {
@@ -78,29 +79,7 @@ const cardPlanesList = [
   </section>
   <section class="horariosection">
     <h2>Horarios</h2>
-    <div class="titulos">
-      <p>Clase</p>
-      <p>Instructor</p>
-      <p>Horario</p>
-      <p>Duración</p>
-    </div>
-    <div class="table-content">
-      <div class="clase">
-        <p>Entrenamiento de Pesas</p>
-        <p>Yoga</p>
-        <p>Levantamiento de Pesas</p>
-        <p>Cardio Intensivo</p>
-        <p>Pilates</p>
-      </div>
-      <div class="instructor">
-        <p>Carlos</p>
-        <p>Sofía</p>
-        <p>Ricardo</p>
-        <p>Ana</p>
-        <p>Laura</p>
-      </div>
-
-    </div>
+      <Horario />
   </section>
   <section class="reviewsection">
     <h2>Testimonios</h2>
@@ -158,8 +137,9 @@ const cardPlanesList = [
   }
 
   .cardclase {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
   }
 
   .contacto {
