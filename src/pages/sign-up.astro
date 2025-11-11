@@ -51,14 +51,32 @@ import Layout from "../layouts/Layout.astro";
         flex-direction: row;
         gap: 15px;
     }
+    @media (max-width:768px) {
+        .name {
+            flex-direction: column;
+        }
+        
+    }
 
     .Nombre {
         width: 50%;
+    }
+    @media (max-width:768px) {
+        .Nombre {
+            width: 100%;
+        }
+        
     }
 
     .Apellido {
         width: 50%;
     }
+    @media (max-width:768px) {
+        .Apellido {
+            width: 100%;
+        }
+        
+    }    
 
 
     h2{
@@ -76,7 +94,13 @@ import Layout from "../layouts/Layout.astro";
     form{
         padding: 15px 300px;
     }
-
+    @media (max-width:768px) {
+        form {
+            padding: 15px 150px;
+        }
+        
+    }    
+    
     input {
         background-color: #482323;
         padding: 10px;
@@ -110,6 +134,13 @@ import Layout from "../layouts/Layout.astro";
         display: flex;
         justify-content: space-between;
         padding: 20px 150px;
+    }
+    @media (max-width:768px) {
+        .button{
+            padding: 20px 40px;
+            gap:40px;
+        }
+        
     }
 
 
