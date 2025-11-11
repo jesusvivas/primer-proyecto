@@ -5,8 +5,9 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
     <h2>Nuestra Ubicación</h2>
     <section>
-        <!-- Aqui va el mapa de ubicacion -->
-        <span>mapa</span>
+        <div class="imagen">
+            <img src="/Ubicacion.jpg" alt="mapa">
+        </div>
     </section>
     <div>
         <h3>Dirección</h3>
@@ -46,4 +47,12 @@ import Layout from "../layouts/Layout.astro";
         font-weight: 600;
         font-size: 18px;
     }
+
+    .imagen {
+        width: 100%;
+        height: auto;
+        align-items: start;
+    }
+
+
 </style>
