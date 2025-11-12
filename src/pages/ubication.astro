@@ -32,6 +32,12 @@ import Layout from "../layouts/Layout.astro";
     section {
         padding: 20px 120px;
     }
+    @media (max-width:768px) {
+        section{
+            padding: 2px;
+        }
+        
+    }
 
     h2{
         font-size: 24px;
@@ -41,17 +47,24 @@ import Layout from "../layouts/Layout.astro";
 
     div {
         padding: 20px 120px;
+        text-align: start;
+        color: #dcaaaa;
+        font-weight: 400;
     }
     
     h3 {
         font-weight: 600;
-        font-size: 18px;
+        font-size: 20px;
+        color: #fcf2f2;
     }
 
     .imagen {
         width: 100%;
         height: auto;
-        align-items: start;
+    }
+
+    img{
+        border-radius: 20px;
     }
 
 
