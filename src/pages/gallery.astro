@@ -5,28 +5,92 @@ import Galeria from "../components/Galeria.astro"
 ---
 
 <Layout>
-    <section>
+    <section class="gallery-page">
         <div>
             <h1>Galería de FitLife Gym</h1>
-            <p>Explra nuestras instalaciones y la energia de nuestros miembros.</p>
+            <p>Explora nuestras instalaciones y la energia de nuestros miembros.</p>
         </div>
         <div class="galeria">
-        <Galeria image="/imgaleria1.jpg" />
-        <Galeria image="/imgaleria2.jpg" />
-        <Galeria image="/imgaleria3.jpg" />
-        <Galeria image="/imgaleria4.jpg" />
-        <Galeria image="/imgaleria5.jpg" />
-        <Galeria image="/imgaleria6.jpg" />
-        <Galeria image="/imgaleria7.jpg" />
-        <Galeria image="/imgaleria8.jpg" />
-        <Galeria image="/imgaleria9.jpg" />
-        <Galeria image="/imgaleria10.jpg" />
-        <Galeria image="/imgaleria11.jpg" />
-        <Galeria image="/imgaleria12.jpg" />
-        <Galeria image="/imgaleria13.jpg" />
-        <Galeria image="/imgaleria14.jpg" />
-        <Galeria image="/imgaleria15.jpg" />
+            <div class="grid-item">
+            <Galeria image="/imgaleria1.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria2.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria3.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria4.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria5.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria6.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria7.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria8.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria9.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria10.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria11.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria12.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria13.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria14.jpg" />
+            </div>
+            <div class="grid-item">
+            <Galeria image="/imgaleria15.jpg" />
+            </div>
         </div>
     </section>
 </Layout>
 
+
+
+<style>
+    .gallery-page {
+        padding: 0 40px;
+    }
+
+    h1 {
+        padding: 30px 0 10px 0; 
+        font-size: 1.8em;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 0.9em;
+        color: #b35050;
+        padding: 0 0 10px 0;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+        padding-bottom: 50px;
+    }
+
+    .grid-item {
+        overflow: hidden;
+        position: relative;
+        padding-top: 100%;
+    }
+
+</style>
